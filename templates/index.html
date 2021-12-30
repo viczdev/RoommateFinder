@@ -7,16 +7,8 @@
     </head>
     <body>
         <div class="container">
-            <h1>Collecting Height</h1>
-            <h3>Please fill the entries to get population statistics on height</h3>
-            <div class="message">
-                {{text}}
-            </div>
-            <form action="{{url_for('success')}}" method="POST">
-                <input title="Email" placeholder="Enter your email address", type="email" name="email_name" required> <br>
-                <input title="Data" placeholder="Enter your height in cm", type="number" min="50" max="300" name="height_name" required> <br>
-                <button type="submit">Submit</button>
-            </form>
+            <h3 class="test">Welcome to the UBC roommate finder! <br> Please sign in!</h3>
+            <a href="/login"><button type="button" class="login-with-google-btn">Sign in with Google</button></a>
         </div>
     </body>
 </html>

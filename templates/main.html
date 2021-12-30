@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title> Data Collector App</title>
+    <head>
+        <link type="text/css" href="../static/main.css" rel="stylesheet">
+        <link type="text/css" href="{{url_for('static', filename='main.css')}}" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <h1>UBC Roommate Finder</h1>
+            <h2>Please fill your information and requirements</h2>
+            <div class="message">
+                {{text}}
+            </div>
+            <form action="{{url_for('success')}}" method="POST">
+                <input title="Name" placeholder="Enter your name", type="text" name="name" required> <br>
+                <input title="Gender" placeholder="Enter your gender", type="text" name="gender" required> <br>
+                <input title="Budget" placeholder="Enter your rental budget", type="number" min="0" name="budget" required> <br>
+                <textarea placeholder=" Enter your requirements" rows="3" cols="44" name = "requirements"></textarea> <br>
+                <button type="submit" class="generalButton">Submit</button>
+            </form>
+            <a href="/content"><button class="generalButton">Content</button></a>
+            <a href="/logout"><button class="generalButton">Logout</button></a>
+        </div>
+    </body>
+</html>
