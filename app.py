@@ -12,8 +12,8 @@ import requests
 from pip._vendor import cachecontrol
 
 app=Flask(__name__)
-app.secret_key = ""
-GOOGLE_CLIENT_ID = ""
+app.secret_key = "vztest"
+GOOGLE_CLIENT_ID = "1019293070047-f5u3dfe3uu3tten7g66o5cp0a3ceuiee.apps.googleusercontent.com"
 os.environ['OAUTHLIB_INSECURE_TRANSPORT'] = '1'
 
 app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://postgres:projectdb@localhost/roommate"

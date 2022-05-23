@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-    <title> Data Collector App</title>
-    <head>
-        <link type="text/css" href="../static/main.css" rel="stylesheet">
-        <link type="text/css" href="{{url_for('static', filename='main.css')}}" rel="stylesheet">
-    </head>
-    <body>
-        <div class="container">
-            <h3 class="test">Welcome to the UBC roommate finder! <br> Please sign in!</h3>
-            <a href="/login"><button type="button" class="login-with-google-btn">Sign in with Google</button></a>
-        </div>
-    </body>
+  <title>Data Collector App</title>
+  <head>
+    <link type="text/css" href="../static/main.css" rel="stylesheet" />
+    <link
+      type="text/css"
+      href="{{url_for('static', filename='main.css')}}"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h3 id="welcomemsg">
+        Welcome to the UBC roommate finder! <br />
+        Please sign in!
+      </h3>
+      <a href="/login"
+        ><button type="button" class="login-with-google-btn">
+          Sign in with Google
+        </button></a
+      >
+    </div>
+  </body>
 </html>
